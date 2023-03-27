@@ -1,0 +1,72 @@
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Feedback</h1>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <input
+            type="radio"
+            name="feedback-type"
+            id="feedback-type"
+            required
+          />
+          <label>Issues</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="feedback-type"
+            id="feedback-type"
+            required
+          />
+          <label>Requests</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="feedback-type"
+            id="feedback-type"
+            required
+          />
+          <label>Other</label>
+        </p>
+        <p>
+          <label>
+            <input
+              type="text"
+              name="name"
+              id="email"
+              placeholder="Name"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <textarea
+            name="details"
+            id="details"
+            cols="40 "
+            rows="10"
+            placeholder="Details"
+            required
+            maxLength={300}
+          ></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+  );
+}
