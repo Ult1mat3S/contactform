@@ -2,13 +2,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Feedback</h1>
-      <form
-        name="contact"
-        method="post"
-        netlify
-        netlify-honeypot="bot-field"
-        hidden
-      >
+      <form name="contact" method="post" netlify netlify-honeypot="bot-field">
         <p>
           <input
             type="radio"
