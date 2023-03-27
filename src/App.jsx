@@ -2,8 +2,8 @@ export default function App() {
   return (
     <div className="App">
       <h1>Feedback</h1>
-      <form name="contact" method="post" netlify netlify-honeypot="bot-field">
-        <p>
+      {/* <form name="contact" method="post" netlify netlify-honeypot="bot-field">
+         <p>
           <input type="hidden" name="form-name" value="Contact" />
           <input
             type="radio"
@@ -67,6 +67,22 @@ export default function App() {
         <p>
           <button type="submit">Submit</button>
         </p>
+      </form>
+      */}
+      <form
+        name="Contact"
+        method="POST"
+        netlify
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="Contact" />
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <div class="form-btn">
+          <button type="submit">SUBMIT</button>
+        </div>
       </form>
     </div>
   );
