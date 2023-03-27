@@ -4,6 +4,7 @@ export default function App() {
       <h1>Feedback</h1>
       <form name="contact" method="post" netlify netlify-honeypot="bot-field">
         <p>
+          <input type="hidden" name="form-name" value="Contact" />
           <input
             type="radio"
             name="feedback-type"
